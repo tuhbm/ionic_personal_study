@@ -1,0 +1,48 @@
+01. ECMAScript Module
+
+- 수출(export)
+export default 함수|클래스|변;
+export {함수|클래스|변수, 요소 as 별명, ...};
+또는
+export 함수|클래스|변수;
+export 함수|클래스|변수;
+....
+
+- 수입(import)
+import 이름 from "파일이름"; // detault인 경우
+import {원하는 요소 } from "파일이름";
+import {원하는 요소 as 별명 } from "파일이름";
+import * from "파일이름"; // 모든 요소
+
+
+
+
+02. CommonJS (Node.js등에서 사용하는 방식)
+
+- 수출(export)
+exports.함수|클래스|변수
+
+- 수입(import)
+require('파일이름').함수|클래스|변수
+
+
+
+
+
+03. AMD (Requre.js등에서 사용하는 방식)
+
+- 수출(export)
+defined("모듈이름",
+    [모듈에서 사용할 외부모듈이름,...],
+    function(매개변수,...){
+        ....
+        return {
+            기능...
+        }
+    }
+);
+
+- 수입(import)
+require(["모듈이름",...],function(매개변수...){
+
+});

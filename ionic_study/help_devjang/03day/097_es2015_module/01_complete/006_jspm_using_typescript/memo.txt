@@ -1,0 +1,27 @@
+http://www.mario-brendel.com/angular2-setup/2016/01/28/Angular2_Jspm_Setup_Part1/
+
+설치 순서
+1. JSPM 설치
+npm install -g jspm
+
+2. 샘플 디렉토리 생성 후 이동
+  cd 샘플 디렉토리
+
+3. package.json 파일 생성
+    npm init -y
+
+4. system.js 다운
+    jspm init -y
+
+5. tsc 설치
+    jspm install ts;
+
+6. live server 설치
+    npm install -g live-server
+
+7. <script> 링크 추가
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+      System.import("app");
+    </script>

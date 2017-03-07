@@ -1,0 +1,10 @@
+1. 글로벌 모듈이란?
+ - <reference>를 이용한 글로벌 모듈
+ - 선언만 정의되어 있는 파일(DefinitelyTyped)을 <reference>에 연결해서 사용
+ - jQuery와 같은 라이브러리를 typescript에서 사용하려는 목적
+ - DefinitelyTyped 파일은 컴파일 용도로만 사용됨. 단지 선언만 들어 있는 파일 (c의 경우 .h파일이 됨)
+
+
+2. 문법
+/// <reference path="경로">
+

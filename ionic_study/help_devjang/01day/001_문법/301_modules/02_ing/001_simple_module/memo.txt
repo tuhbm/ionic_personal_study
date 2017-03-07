@@ -1,0 +1,22 @@
+https://www.sitepoint.com/modular-javascript-systemjs-jspm/
+
+설치 순서
+1. JSPM 설치
+npm install -g jspm
+
+2. 샘플 디렉토리 생성 후 이동
+  cd 샘플 디렉토리
+
+3. package.json 파일 생성
+    npm init -y
+
+4. system.js 다운
+    npm install jspm --save-dev
+    jspm init -y
+
+5. <script> 링크 추가
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+      System.import("파일");
+    </script>
